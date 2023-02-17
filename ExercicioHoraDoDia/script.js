@@ -3,7 +3,11 @@ function carregar() {
   let img = window.document.getElementById("imagem");
   let data = new Date();
   let hora = data.getHours();
-  let minutos = data.getMinutes();
+  let minutos = zeroFill( data.getMinutes());
+
+  function zeroFill(minutos) {
+    return minutos < 10 ? `0${minutos}` : `${minutos}`;
+  }
 
   msg.innerHTML = `Agora são ${hora}h:${minutos}min`;
   if (hora >= 0 && hora < 12) {

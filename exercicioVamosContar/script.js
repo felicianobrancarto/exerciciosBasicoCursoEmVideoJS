@@ -9,7 +9,7 @@ function contar() {
     fim.value.length == 0 ||
     passo.value.length == 0
   ) {
-   // window.alert("[ERRO] Faltam dados");
+   // window.alert("[ERRO] Faltam dados"); o innerthml é mais eficaz nesta situação.
     res.innerHTML = ("Impossivel contar")
   } else {
     res.innerHTML = "contando: <br>" 

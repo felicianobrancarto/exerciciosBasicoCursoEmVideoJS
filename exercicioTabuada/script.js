@@ -1,7 +1,6 @@
 function tabuada() {
   let valor = document.getElementById("txtTab");
   let tabu = document.getElementById("selTab");
-  let res = document.getElementById("res");
 
   if (valor.value.length == 0) {
     window.alert("Por favor, digite um número.");

@@ -11,7 +11,7 @@ function isnumero(n) {
   }
 }
 
-function naLista(n, l) {
+function naLista(n, l) { //codigo para evitar de o numero duplicar, ou diferente entre 1 e 100.
   if (l.indexOf(Number(n)) != -1) {
     return true;
   } else {
@@ -29,8 +29,8 @@ function adicionar() {
   } else {
     window.alert("Valor invalido ou já encontrado na lista");
   }
-  valor.value = ''
-  valor.focus();
+  valor.value = '' // limpa o input apos utiliza-lo.
+  valor.focus(); //colocar o cursor do mouse fiscando novamente no input utilizado.
 }
 
 function finalizar(){
